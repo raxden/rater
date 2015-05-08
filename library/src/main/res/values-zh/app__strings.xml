@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app__rate_title">率 %1$s</string>
+    <string name="app__rate_message">如果你喜歡使用 %1$s，請花一點時間來評價它。感謝您的支持！</string>
+    <string name="app__rate_button_rate">率</string>
+    <string name="app__rate_button_reminder_later">稍後提醒我</string>
+    <string name="app__rate_button_dont_show_again">不，謝謝</string>
+    
+</resources>

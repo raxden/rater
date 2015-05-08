@@ -16,7 +16,6 @@ public class RaterHelper {
 
     private static final String TAG = RaterHelper.class.getSimpleName();
 
-
     private static final String DONT_SHOW_AGAIN = "appRater.dontShowAgain";
     private static final String LAUNCH_COUNT = "appRater.launchCount";
     private static final String DATE_FIRST_LAUNCH = "appRater.firstLaunch";
@@ -157,7 +156,7 @@ public class RaterHelper {
     }
 
     private SharedPreferences getRaterPreferences(Context context) {
-        return context.getSharedPreferences(RaterModule.class.getSimpleName(), 0);
+        return context.getSharedPreferences(RaterHelper.class.getSimpleName(), 0);
     }
 
     public boolean isDontShowAgain(Context context) {

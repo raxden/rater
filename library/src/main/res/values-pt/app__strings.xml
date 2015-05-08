@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app__rate_title">Taxa %1$s</string>
+    <string name="app__rate_message">Se você está desfrutando usando %1$s, por favor, valorizá-lo. Obrigado pela ajuda!</string>
+    <string name="app__rate_button_rate">Avaliar</string>
+    <string name="app__rate_button_reminder_later">Mais tarde</string>
+    <string name="app__rate_button_dont_show_again">Não, obrigado</string>
+    
+</resources>

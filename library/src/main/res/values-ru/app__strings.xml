@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app__rate_title">скорость %1$s</string>
+    <string name="app__rate_message">Если Вам понравится %1$s, пожалуйста, найдите время, чтобы оценить. Спасибо за вашу поддержку!</string>
+    <string name="app__rate_button_rate">скорость</string>
+    <string name="app__rate_button_reminder_later">Напомнить позже</string>
+    <string name="app__rate_button_dont_show_again">Нет, спасибо</string>
+    
+</resources>

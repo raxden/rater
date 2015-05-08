@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app__rate_title">율 %1$s</string>
+    <string name="app__rate_message">당신이 %1$s 을 사용하여 즐길 수 있다면, 그것은을 평가하기 위해 잠시 시간을내어주세요. 귀하의 지원을 주셔서 감사합니다!</string>
+    <string name="app__rate_button_rate">율</string>
+    <string name="app__rate_button_reminder_later">나중에 알림</string>
+    <string name="app__rate_button_dont_show_again">아니오, 괜찮습니다.</string>
+    
+</resources>

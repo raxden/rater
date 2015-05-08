@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app__rate_title">Stawka %1$s</string>
+    <string name="app__rate_message">Jeśli lubisz pomocą %1$s, poświęć chwilę, aby ją ocenić. Dziękujemy za wsparcie!</string>
+    <string name="app__rate_button_rate">Stawka</string>
+    <string name="app__rate_button_reminder_later">Przypomnij mi później</string>
+    <string name="app__rate_button_dont_show_again">Nie, dziękuję</string>
+    
+</resources>
