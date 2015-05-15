@@ -10,7 +10,23 @@ import android.net.Uri;
 import com.raxdenstudios.commons.util.Utils;
 
 /**
- * Created by agomez on 04/05/2015.
+ * <p>RaterHelper is a helper class that prompts the user to rate the application if application has
+ * been launched 7 times and it has been 3 days since the first launch by default</p>
+ * <p>Here is an example:</p>
+ * <pre class="prettyprint">
+ *
+ *  RaterHelper.getInstance().init(context);
+ *  RaterHelper.getInstance().showRaterDialogIfNecessary(context, new RaterHelper.AppRaterCallbacks() {
+ *
+ *  public void onDialogClickRate() {}
+ *
+ *  public void onDialogClickRemindLater() {}
+ *
+ *  public void onDialogClickDontShowAgain() {}
+ *
+ *  });
+ *
+ * </pre>
  */
 public class RaterHelper {
 
@@ -65,9 +81,7 @@ public class RaterHelper {
 
     private static RaterHelper INSTANCE = null;
 
-    private RaterHelper() {
-
-    }
+    private RaterHelper() {}
 
     private synchronized static void createInstance() {
         if (INSTANCE == null) {
@@ -80,12 +94,28 @@ public class RaterHelper {
         return INSTANCE;
     }
 
+    /**
+     * Initialize RaterHelper with a default configuration.
+     * @param context
+     */
     public void init(Context context) {
-        if (mConfig == null) {
-            mConfig = new DefaultAppRaterConfiguration(context, Utils.getApplicationName(context), Utils.getPackageName(context));
-        }
+        init(new DefaultAppRaterConfiguration(context, Utils.getApplicationName(context), Utils.getPackageName(context)));
     }
 
+    /**
+     * Initialize RaterHelper with a custom configuration.
+     * @param configuration
+     */
+    public void init(AppRaterConfiguration configuration) {
+        mConfig = configuration;
+    }
+
+    /**
+     * Show dialog if application has been launched 7 times and it has been 3 days since the
+     * first launch.
+     * @param context
+     * @param callbacks
+     */
     public void showRaterDialogIfNecessary(Context context, AppRaterCallbacks callbacks) {
         synchronized (o) {
 
@@ -111,6 +141,11 @@ public class RaterHelper {
         }
     }
 
+    /**
+     * Show rater dialog.
+     * @param context
+     * @param callbacks
+     */
     public void showRaterDialog(final Context context, final AppRaterCallbacks callbacks) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle(mConfig.dialogTitle);
@@ -142,15 +177,27 @@ public class RaterHelper {
         builder.show();
     }
 
+    /**
+     * Handle "rater" option selected by user.
+     * @param context
+     */
     public void handleRaterOption(Context context) {
         setDontShowAgain(context, true);
         context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + mConfig.appPackageName)));
     }
 
+    /**
+     * Handle "remind later" option selected by user.
+     * @param context
+     */
     public void handleRemindLaterOption(Context context) {
 
     }
 
+    /**
+     * Handle "dont show again" option selected by user.
+     * @param context
+     */
     public void handleDontShowAgainOption(Context context) {
         setDontShowAgain(context, true);
     }
