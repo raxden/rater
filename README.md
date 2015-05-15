@@ -3,7 +3,7 @@ Android Rater
 
 Android Rater is a library that prompts the user to rate the application if application has been launched 7 times and it has been 3 days since the first launch by default.
 
-[![Release](https://img.shields.io/github/release/raxden/AndroidGCM.svg?label=maven central)](https://jitpack.io/#raxden/AndroidRater/) [![API](https://img.shields.io/badge/API-10%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=10)
+[![Release](https://img.shields.io/github/release/raxden/AndroidRater.svg?label=maven central)](https://jitpack.io/#raxden/AndroidRater/) [![API](https://img.shields.io/badge/API-10%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=10)
 
 ## Usage
 
@@ -39,7 +39,7 @@ dependencies {
 
 **3. clone whole repository**
  - Open your **commandline-input** and navigate to your desired destination folder (where you want to put the library)
- - Use the command `git clone https://github.com/raxden/AndroidRater.git` to download the full AndroidGCM repository to your computer (this includes the folder of the library project as well as the example project)
+ - Use the command `git clone https://github.com/raxden/AndroidRater.git` to download the full AndroidRater repository to your computer (this includes the folder of the library project as well as the example project)
 
 
 ### Activity or Fragment
