@@ -1,7 +1,7 @@
 Android Rater
 ==========
 
-Android Rater is a library that prompts the user to rate the application if application has been launched 7 times and it has been 3 days since the first launch by default.
+Android Rater is a library that prompts the user to rate the application if application has been launched 7 times and it has been 3 days since the first launch by default. Works on Android 2.3 (API level 10) and upwards.
 
 [![Release](https://img.shields.io/github/release/raxden/AndroidRater.svg?label=maven central)](https://jitpack.io/#raxden/AndroidRater/) [![API](https://img.shields.io/badge/API-10%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=10)
 
@@ -41,21 +41,6 @@ dependencies {
  - Open your **commandline-input** and navigate to your desired destination folder (where you want to put the library)
  - Use the command `git clone https://github.com/raxden/AndroidRater.git` to download the full AndroidRater repository to your computer (this includes the folder of the library project as well as the example project)
 
+### Documentation ### 
 
-### Activity or Fragment
-
-```
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        RaterHelper.getInstance().init(context);
-        RaterHelper.getInstance().showRaterDialogIfNecessary(context, new RaterHelper.AppRaterCallbacks() {
-        
-          public void onDialogClickRate() {}
-          public void onDialogClickRemindLater() {}
-          public void onDialogClickDontShowAgain() {}
-          
-        });
-    }
-```
+For a **detailed documentation**, please have a look at the [**Wiki**](https://github.com/raxden/AndroidRater/wiki).
