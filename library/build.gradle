@@ -28,7 +28,9 @@ android {
 }
 
 repositories {
-    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -36,7 +38,7 @@ dependencies {
     compile 'com.google.android.gms:play-services:+'
     compile 'com.android.support:appcompat-v7:+'
 
-    compile 'com.github.raxden:androidcommons:v2.1.0@aar'
+    compile(name:'androidcommons-2.1.0', ext:'aar')
 }
 
 // build a jar with source files
