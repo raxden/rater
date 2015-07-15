@@ -41,10 +41,10 @@ public class RaterHelper {
     private AppRaterConfiguration mConfig;
     private Object o = new Object();
 
-    public static interface AppRaterCallbacks {
-        public void onDialogClickRate();
-        public void onDialogClickRemindLater();
-        public void onDialogClickDontShowAgain();
+    public interface AppRaterCallbacks {
+        void onDialogClickRate();
+        void onDialogClickRemindLater();
+        void onDialogClickDontShowAgain();
     }
 
     public static class AppRaterConfiguration {
@@ -256,10 +256,6 @@ public class RaterHelper {
         synchronized (o) {
             setLaunchCounter(context, getLaunchCounter(context) + 1);
         }
-    }
-
-    public AppRaterConfiguration getConfiguration() {
-        return mConfig;
     }
 
 }
