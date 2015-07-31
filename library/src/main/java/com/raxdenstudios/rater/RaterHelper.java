@@ -57,6 +57,7 @@ public class RaterHelper {
             SharedPreferences.Editor editor = getRaterPreferences(context).edit();
             if (editor != null) {
                 editor.putLong(LAUNCH_COUNT, launchCount);
+                editor.commit();
             }
         }
     }
@@ -66,6 +67,7 @@ public class RaterHelper {
             SharedPreferences.Editor editor = getRaterPreferences(context).edit();
             if (editor != null) {
                 editor.putLong(DATE_FIRST_LAUNCH, firstLaunch);
+                editor.commit();
             }
         }
     }

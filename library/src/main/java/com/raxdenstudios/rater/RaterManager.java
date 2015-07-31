@@ -66,7 +66,7 @@ public class RaterManager {
         Log.d(TAG, "now: "+(new java.util.Date(now).toString()));
         Log.d(TAG, "dateFirstLaunch: "+dateFirstLaunch);
         Log.d(TAG, "daysUntilPrompt: "+mConfiguration.daysUntilPrompt);
-        Log.d(TAG, "daysUntilPrompt Date: "+(new java.util.Date(mConfiguration.daysUntilPrompt * 24 * 60 * 60 * 1000).toString()));
+        Log.d(TAG, "daysUntilPrompt Date: "+(new java.util.Date(dateFirstLaunch + (mConfiguration.daysUntilPrompt * 24 * 60 * 60 * 1000)).toString()));
 
         // Wait at least n days before opening
         if (launchCounter >= mConfiguration.launchesUntilPrompt) {
