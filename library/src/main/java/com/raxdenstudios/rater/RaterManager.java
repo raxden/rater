@@ -120,7 +120,7 @@ public class RaterManager {
     private void handleRaterOption() {
         Log.d(TAG, "[handleRaterOption]");
         RaterHelper.getInstance().setDontShowAgain(mContext, true);
-        mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + mConfiguration.appPackageName)));
+        mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + mConfiguration.appPackageName)));
     }
 
     /**

@@ -30,7 +30,7 @@ ext {
     buildToolsVersion = '23.0.3'
 
     // Library version
-    versionLibrary = '2.2.1'
+    versionLibrary = '2.2.2'
 
     // App dependencies
     supportLibraryVersion = '23.3.0'
