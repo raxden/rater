@@ -2,15 +2,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group = 'com.raxdenstudios'
-version = '2.2.0'
+version = '2.2.1'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
     }
 
     buildTypes {
@@ -34,7 +34,7 @@ repositories {
 
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
-    compile 'com.github.raxden:AndroidCommons:v2.2.0@aar'
+    compile 'com.github.raxden:AndroidCommons:v2.2.5@aar'
 }
 
 
