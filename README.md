@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-	    compile 'com.github.raxden:AndroidRater:v2.2.0@aar'
+	    compile 'com.github.raxden:AndroidRater:v2.2.2@aar'
 }
 ```
 
@@ -33,7 +33,7 @@ dependencies {
 <dependency>
 	    <groupId>com.github.raxden</groupId>
 	    <artifactId>AndroidRater</artifactId>
-	    <version>v2.2.0</version>
+	    <version>v2.2.2</version>
 </dependency>
 ```
 
@@ -43,4 +43,4 @@ dependencies {
 
 ### Documentation 
 
-For a **detailed documentation**, please have a look at the [**Wiki**](https://github.com/raxden/AndroidRater/wiki) or the [**Javadocs**](https://jitpack.io/com/github/raxden/AndroidRater/v2.2.0/javadoc/).
+For a **detailed documentation**, please have a look at the [**Wiki**](https://github.com/raxden/AndroidRater/wiki) or the [**Javadocs**](https://jitpack.io/com/github/raxden/AndroidRater/v2.2.2/javadoc/).
