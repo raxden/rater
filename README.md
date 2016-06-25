@@ -3,7 +3,8 @@ Android Rater
 
 Android Rater is a library that prompts the user to rate the application if application has been launched 7 times and it has been 3 days since the first launch by default. Works on Android 4.1 (API level 16) and upwards.
 
-[![Release](https://img.shields.io/github/release/raxden/AndroidRater.svg?label=maven central)](https://jitpack.io/#raxden/AndroidRater/) [![API](https://img.shields.io/badge/API-16%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=16)
+[![Release](https://img.shields.io/github/tag/raxden/AndroidRater.svg?label=maven central)](https://jitpack.io/#raxden/AndroidRater/) 
+[![API](https://img.shields.io/badge/API-16%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
 ## Usage
 
@@ -18,7 +19,7 @@ repositories {
 }
 
 dependencies {
-	    compile 'com.github.raxden:AndroidRater:v2.2.2@aar'
+	    compile 'com.github.raxden:AndroidRater:2.2.3@aar'
 }
 ```
 
@@ -33,7 +34,7 @@ dependencies {
 <dependency>
 	    <groupId>com.github.raxden</groupId>
 	    <artifactId>AndroidRater</artifactId>
-	    <version>v2.2.2</version>
+	    <version>2.2.3</version>
 </dependency>
 ```
 
@@ -43,4 +44,4 @@ dependencies {
 
 ### Documentation 
 
-For a **detailed documentation**, please have a look at the [**Wiki**](https://github.com/raxden/AndroidRater/wiki) or the [**Javadocs**](https://jitpack.io/com/github/raxden/AndroidRater/v2.2.2/javadoc/).
+For a **detailed documentation**, please have a look at the [**Wiki**](https://github.com/raxden/AndroidRater/wiki) or the [**Javadocs**](https://jitpack.io/com/github/raxden/AndroidRater/2.2.3/javadoc/).
