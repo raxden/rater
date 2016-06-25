@@ -31,7 +31,7 @@ ext {
 
     // App dependencies
     supportLibraryVersion = '24.0.0'
-    androidCommonsVersion = '2.2.6'     // https://github.com/raxden/AndroidCommons
+    androidCommonsVersion = '2.2.7@aar'     // https://github.com/raxden/AndroidCommons
 
     // Test dependencies
     jUnitVersion = '4.12'
