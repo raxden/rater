@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidRater.iml" filepath="$PROJECT_DIR$/AndroidRater.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rater/library.iml" filepath="$PROJECT_DIR$/rater/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/rater/rater.iml" filepath="$PROJECT_DIR$/rater/rater.iml" />
     </modules>
   </component>

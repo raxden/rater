@@ -2,8 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.neenbedankt.android-apt'
 
-group = GROUP
-version = VERSION
+group = GROUP_NAME
+version = LIBRARY_VERSION
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
