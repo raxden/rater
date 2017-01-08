@@ -20,7 +20,6 @@ repositories {
 
 dependencies {
 	    compile 'com.github.raxden:AndroidRater:{versionName}@aar'
-        compile 'com.github.raxden:AndroidCommons:3.0.2@aar'
 }
 ```
 
