@@ -4,10 +4,10 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.util.Log;
-
-import com.raxdenstudios.commons.util.Utils;
 
 /**
  * Created by agomez on 31/07/2015.
@@ -24,7 +24,7 @@ public class RaterManager {
 
 
     public RaterManager(Context context) {
-        this(context, new DefaultConfiguration(context, Utils.getApplicationName(context), Utils.getPackageName(context)));
+        this(context, new DefaultConfiguration(context, getApplicationName(context), getPackageName(context)));
     }
 
     public RaterManager(Context context, Configuration configuration) {
@@ -136,6 +136,21 @@ public class RaterManager {
     private void handleDontShowAgainOption() {
         Log.d(TAG, "[handleDontShowAgainOption]");
         RaterHelper.getInstance().setDontShowAgain(mContext, true);
+    }
+
+    private static String getApplicationName(Context context) {
+        return context.getString(context.getApplicationInfo().labelRes);
+    }
+
+    private static String getPackageName(Context context) {
+        String packageName = "";
+        try {
+            PackageInfo pInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+            packageName = pInfo.packageName;
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e(TAG, e.getMessage(), e);
+        }
+        return packageName;
     }
 
     public interface AppRaterCallbacks {

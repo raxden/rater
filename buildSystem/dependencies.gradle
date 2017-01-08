@@ -18,9 +18,6 @@ ext {
     supportLibraryVersion = '25.0.0'
     servicesVersion = '9.8.0'
 
-    // Libraries
-    androidCommonsVersion = '3.0.3@aar'     // https://github.com/raxden/AndroidCommons
-
     // Testing
     jUnitVersion = '4.12'
     assertJVersion = '1.7.0'
@@ -30,7 +27,6 @@ ext {
     libraryDependencies = [
             compile    : [
                     "com.android.support:appcompat-v7:${supportLibraryVersion}",
-                    "com.github.raxden:AndroidCommons:${androidCommonsVersion}",
             ],
             testCompile: [
                     "junit:junit:${jUnitVersion}",
